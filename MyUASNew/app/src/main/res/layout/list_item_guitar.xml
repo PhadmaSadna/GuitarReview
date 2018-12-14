@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:background="@drawable/btn_secondary_bg"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvReviewTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/tvMerkType"
+        android:hint="Judul Review"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMerkType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:hint="Merk/Type"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tvJnsGitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvReviewTittle"
+        android:layout_marginTop="14dp"
+        android:hint="Jenis Gitar"
+        android:textColor="#ff9100" />
+
+    <TextView
+        android:id="@+id/tvReviewDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMerkType"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="0dp"
+        android:hint="Detail Review"
+        android:textAlignment="textEnd"
+        android:textColor="#aaa" />
+
+    <TextView
+        android:id="@+id/tvHarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvJnsGitar"
+        android:layout_marginTop="16dp"
+        android:hint="Harga"
+        android:textAlignment="center"
+        android:textColor="#000" />
+
+</RelativeLayout>
